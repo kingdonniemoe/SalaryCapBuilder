@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.LoginForm {
+  margin: 10px;
+}
+
+.RegistrationForm {
+  margin: 10px;
+}
+
+.login-submit-button {
+  display: block;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.label {
+  display: block;
+}
+
+.player-table {
+  margin: 10px;
+}
+
+.table-container {
+  max-height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100%;
+  margin: 20px auto;
+  overflow: auto;
+}
+
+.dashboard-buttons {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.navigate-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.registration-member {
+  text-align: center;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.carousel:hover .carousel-control-next,
+.carousel:hover .carousel-control-prev {
+  opacity: 0.25;
+}
+
+.button-navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.player-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: hsl(0, 12%, 5%);
+  color: aliceblue;
+}
+
+@media (max-width: 768px) {
+  .player-table th:nth-child(3), /* Total Contract */
+  .player-table td:nth-child(3),
+  .player-table th:nth-child(2), /* Cap Hit */
+  .player-table td:nth-child(2) {
+    display: none;
+  }
+  .button-navbar .btn {
+    padding: 5px 10px;
+    font-size: 12px;
+    min-width: 50px;
+  }
+  .button-navbar {
+    margin-top: 50px;
+  }
+
+}
+
+.table {
+  margin: 0;
+}
+
+.carousel-container {
+  height: 500px;
+  width: 100%;
+  max-width: 500px;
+  overflow: hidden;
+  padding: 10px;
+
+}
+
